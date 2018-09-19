@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great|Josefin+Slab');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #7f8c8d;
+    background-color: #ecf0ff;
+    margin-top: 2em;
+}
+
+h1, h2, h3 {
+    font-family: 'Josefin Slab', serif;
+}
+
+#navbar > ul {
+    margin-top: 800;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1cm;
+}
+
+#navbar > ul > li {
+    margin: 0 2em;
+    display: inline-block;
+
+    border-bottom: solid #7f8c8d 2px;
+    position: relative;
+}
+
+.nav-link {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-decoration: none;
+}
+
+a {
+    color: #7f8c8d;
+}
+
+
+#intro {
+    font-size: 8em;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+#fancy {
+    color: #9DE79C;
+}
+
+#features {
+    text-align: center;
+}
+
+#table {
+    text-align: center;
+}
+
+
+table#table {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 2cm;
+  }
+
+  #creds {
+      text-align: center;
+      background-color: #c7d3db;
+  }
+
+  #blurb {
+      margin-bottom: 1cm;
+  }
