@@ -9,6 +9,8 @@ body {
     color: #7f8c8d;
     background-color: #ecf0ff;
     margin-top: 2em;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 h1, h2, h3 {
@@ -45,13 +47,10 @@ a {
 
 
 #intro {
-    font-size: 8em;
+    font-size: 4em;
     text-align: center;
 }
 
-#title {
-    text-align: center;
-}
 
 #fancy {
     color: #9DE79C;
@@ -61,22 +60,56 @@ a {
     text-align: center;
 }
 
-#table {
+
+#creds {
     text-align: center;
+    background-color: #c7d3db;
 }
 
+#blurb {
+    margin-bottom: 1cm;
+    align-content: center;
+}
 
-table#table {
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom: 2cm;
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #c7d3db;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
   }
 
-  #creds {
-      text-align: center;
-      background-color: #c7d3db;
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
   }
 
-  #blurb {
-      margin-bottom: 1cm;
+  /* Style the collapsible content. Note: hidden by default */
+  .btn-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
   }
+
+  .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 11px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+#others {
+    margin-botton: 200px;
+}
