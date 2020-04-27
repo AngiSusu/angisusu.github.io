@@ -271,7 +271,7 @@ nav ul li a {
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #b8a07e;
+  border: 20px solid #75dddd;
 }
 
 #about .div-img-bg .about-img img {
@@ -328,7 +328,7 @@ nav ul li a {
 
 .services-block i {
   font-size: 44px;
-  color: #b8a07e;
+  color: #75dddd;
   line-height: 44px;
 }
 
@@ -354,7 +354,7 @@ nav ul li a {
 }
 
 .services-carousel .owl-dot.active {
-  background-color: #b8a07e;
+  background-color:#75dddd;
 }
 
 .owl-nav {
@@ -400,16 +400,23 @@ nav ul li a {
   display: inline-block;
   margin-bottom: 50px;
   width: 100%;
+  min-height: 260px;
 }
 
 .portfolio-thumbnail {
   margin-bottom: 30px;
   overflow: hidden;
   min-height: 260px;
+  max-height: 260px;
+  vertical-align: middle;
+  align-content: center
 }
 
 .portfolio-thumbnail img {
-  max-width: 100%;
+  width: 380px;
+  height: 260px;
+  overflow: hidden;
+  object-fit: cover
 }
 
 /*--------------------------------------------------------------
