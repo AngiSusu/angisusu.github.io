@@ -547,6 +547,18 @@ nav ul li a {
   animation: animate-loading 1s linear infinite;
 }
 
+.brand-logos {
+  display: inline-block;
+  height: 50px;
+  margin: 50px 200px 0px 200px;
+}
+
+.brand-logos img {
+  display: inline-block;
+  height: 50px;
+  margin: 5px 5px 5px 5px;
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1105,4 +1117,14 @@ blockquote {
     display: inline-block;
     margin-right: 0;
   }
+
+  #press {
+    width: 100%;
+    height: auto;
+    background: #f7f7f7;
+    padding-top: 100px;
+  }
+
+
+
 }
