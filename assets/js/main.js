@@ -55,13 +55,26 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll > 200) {
-      $("#main-nav, #main-nav-subpage").slideDown(700);
-      $("#main-nav-subpage").removeClass('subpage-nav');
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    if (page.equals("index.html")) {
+      if (scroll > 200) {
+        $("#main-nav, #main-nav-subpage").slideDown(700);
+        $("#main-nav-subpage").removeClass('subpage-nav');
+      } else {
+        $("#main-nav").slideUp(700);
+        $("#main-nav-subpage").hide();
+        $("#main-nav-subpage").addClass('subpage-nav');
+      }
     } else {
-      $("#main-nav").slideUp(700);
-      $("#main-nav-subpage").hide();
-      $("#main-nav-subpage").addClass('subpage-nav');
+      if (scroll < 200) {
+        $("#main-nav, #main-nav-subpage").slideDown(700);
+        $("#main-nav-subpage").removeClass('subpage-nav');
+      } else {
+        $("#main-nav").slideUp(700);
+        $("#main-nav-subpage").hide();
+        $("#main-nav-subpage").addClass('subpage-nav');
+      }
     }
   });
 
@@ -134,6 +147,15 @@ $(document).ready(function() {
         filter: $(this).data('filter')
       });
     });
+
+    $('#portfolio-flters2 li').on('click', function() {
+      $("#portfolio-flters2 li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      portfolioIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+    });
   });
 
   // Initiate venobox (lightbox feature used in portofilo)
@@ -148,3 +170,25 @@ $(document).ready(function() {
     loop: true,
     items: 1
   });
+
+
+  // Button floating back to top ==============================
+  //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

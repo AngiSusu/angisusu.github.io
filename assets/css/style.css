@@ -376,7 +376,7 @@ nav ul li a {
   padding-bottom: 50px;
 }
 
-#portfolio #portfolio-flters {
+#portfolio #portfolio-flters, #portfolio #portfolio-flters2 {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
@@ -385,7 +385,7 @@ nav ul li a {
   padding: 2px 15px;
 }
 
-#portfolio #portfolio-flters li {
+#portfolio #portfolio-flters li, #portfolio #portfolio-flters2 li{
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
@@ -398,7 +398,7 @@ nav ul li a {
   transition: all 0.3s ease-in-out;
 }
 
-#portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
+#portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active, #portfolio #portfolio-flters2 li:hover, #portfolio #portfolio-flters2 li.filter.active{
   color: #b8a07e;
 }
 
@@ -542,6 +542,20 @@ nav ul li a {
     position: static;
     margin-top: 30px;
   }
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  opacity: 50%;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
 
 /*--------------------------------------------------------------
