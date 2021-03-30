@@ -273,11 +273,11 @@ nav ul li a {
   width: 100%;
   height: auto;
   background: #f7f7f7;
-  padding-top: 190px;
+  padding-top: 90px;
 }
 
 #about .div-img-bg {
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   border: 20px solid #75dddd;
 }
 
@@ -847,6 +847,14 @@ blockquote {
   border-left: 4px solid #b8a07e;
 }
 
+/*-----------------------------------
+# Press
+------------------------*/
+#press {
+  background: #ffffff;
+  padding-bottom: 10px;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -964,7 +972,7 @@ blockquote {
   }
   /* Contact */
   .contact-contact {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   /* Footer */
   #footer .socials-media ul li {
@@ -1034,7 +1042,7 @@ blockquote {
   }
   /* Contact */
   .contact-contact {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   /* Footer */
   #footer .socials-media ul li {
@@ -1104,7 +1112,7 @@ blockquote {
   }
   /* Contact */
   .contact-contact {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   /* Footer */
   #footer .socials-media ul li {
@@ -1173,7 +1181,7 @@ blockquote {
   }
   /* Contact */
   .contact-contact {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   /* Footer */
   #footer .socials-media ul li {
@@ -1242,7 +1250,7 @@ blockquote {
   }
   /* Contact */
   .contact-contact {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   /* Footer */
   #footer .socials-media ul li {
@@ -1260,7 +1268,7 @@ blockquote {
   #press {
     width: 100%;
     height: auto;
-    background: #f7f7f7;
+    background: #ffffff;
     padding-top: 100px;
   }
 
